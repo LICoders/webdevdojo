@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Pizza Order Form Lesson</title>
+
+  
+  
+  <style type="text/css"></style>
+</head><body>
+<div style="text-align: center;">
+<h3 style="color: rgb(51, 102, 255);"><big style="text-decoration: underline;"><big><img style="width: 129px; height: 114px;" alt="" src="images-2.jpeg" align="left">Pizza Order Form
+Lesson</big></big></h3>
+
+<div style="text-align: left;"><br>
+<br>
+<h2 style="color: rgb(51, 102, 255);"><br>
+<span style="font-weight: bold;"></span></h2>
+<h2 style="color: rgb(51, 102, 255);"><span style="font-weight: bold;">Goal</span></h2>
+Everyone loves Chef Bob's pizza and to make his business more efficent
+he wants to create an online system for placing orders.&nbsp; He has
+asked you to help him! To get the job done you will be using HTML and
+JavaScript&nbsp; make a custom pizza order form for Chef Bob.&nbsp;
+Create an order form that asks for the person's name,what size
+pizza(small,medium or large) and what toppings they would like on their
+pizza(such as peppperoni, extra cheese, etc.). All items should have
+prices next to them. When the person is done ordering they should press
+submit and get a total price. If a person forgets to fill out a field
+they should get an error message telling them what they missed on the
+form. Feel free to add pictures and graphics to make the form look
+nice. <br>
+<span style="font-weight: bold;"></span>
+<h2 style="color: rgb(51, 102, 255);">Concepts</h2>
+After completing this lesson you should understand how to use:<br>
+<ul>
+  <li>Forms</li>
+  <li>Checkboxes</li>
+  <li>Radio Buttons</li>
+  <li>Input Fields</li>
+  <li>Submit Button</li>
+  <li>Error Checking</li>
+  <li>JavaScript</li>
+</ul>
+<h2 style="color: rgb(51, 102, 255);">Steps</h2>
+<span style="font-weight: bold;">1.Create the form using HTML</span><ol>
+  
+</ol>
+<code>&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;
+<br>
+&lt;head&gt;
+<br>
+&lt;title&gt;Your title&lt;/title&gt;
+<br>
+&lt;script&gt;
+<br>
+This is where the JavaScript goes<br>
+&lt;/script&gt;
+<br>
+&lt;/head&gt;<br>
+&lt;body&gt;
+<br>
+&lt;form&gt;
+This is where all the input fields go(check boxes, radio buttons, etc.)
+<br>
+&lt;/form&gt;
+<br>
+&lt;img src="image.jpg&gt; how to add a picture<br>
+&lt;/body&gt;
+<br>
+&lt;/html&gt;</code> <br>
+<br>
+<span style="font-weight: bold;">2.This is an example of a checkbox</span><br>
+&nbsp;&nbsp;&nbsp; <br>
+&lt;input type="checkbox"&nbsp; value="sausage" name="top" /&gt; Sausage ($1.00) &lt;br /&gt;<br>
+<br>
+<span style="font-weight: bold;">3.This is an example of a radio button</span><br>
+<br>
+&lt;input type="radio"&nbsp; value="small" name="size" /&gt; Small: $6.00<br>
+<br>
+<span style="font-weight: bold;">4.This is an example of an input field</span><br>
+<br>
+First Name: &lt;input type="text" id="name" /&gt;<br>
+<br>
+<span style="font-weight: bold;">5.Add JavaScript for error checking </span><br>
+<br>
+This example checks to make sure the name input is filled out<br>
+<br>
+function validateName()<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; var theName=
+document.getElementById("name").value;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; if (theName.length == 0)<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; var error = "Name is missing.";<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; return error;<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; else<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+{&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; return ""<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }<br>
+<span style="font-weight: bold;">5.When submit is pressed give the total price</span><br>
+<br>
+<br>
+<h2 style="color: rgb(51, 102, 255);">Want to make your form even better?</h2>
+<ul>
+  <li>Allow them to order more than one pizza</li>
+  <li>Show a picture of the pizza that they ordered</li>
+  <li>Link it to an actual online pizza place</li>
+  <li>Add garlic knots, salads and drinks</li>
+  <li>Calculate tip and tax for the order</li>
+  <li>Try using another language like Scratch or Java<br>
+    <br>
+  </li>
+</ul>
+<h2 style="color: rgb(51, 102, 255);">Resources</h2>
+<ul>
+  <li><a href="http://www.w3schools.com/html/html_intro.asp" target="_blank">HTML Tutorial</a></li>
+  <li><a href="http://www.w3schools.com/js/js_examples.asp">JavaScript Examples</a></li>
+  <li><a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">HTML Form Examples</a></li>
+  <li><a href="http://www.seriouseats.com/recipes/2011/01/cooks-illustrated-thin-crust-new-york-ny-pizza-recipe.html" target="_blank"><span style="text-decoration: underline;">Chef Bob's Secret Pizza Recipe</span></a><br>
+  </li>
+</ul>
+<br>
+
+  <ol>
+</ol>
+<br>
+<h2><br>
+</h2>
+&nbsp;<br>
+</div>
+<br>
+</div>
+
+</body></html>
