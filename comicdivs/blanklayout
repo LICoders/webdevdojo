@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <meta content="kidOYOproject" content="webmakerproject" content="coderdojoproject"  content="fredxcoders.com" content="codeLI.org" content="kidoyo.com" content="@codefarmer"  content="coderemix" content="comicmake" name="NoizIvy:tags" name="Mozilla:tags" name="kidOYO:tags" name="FredxCoders:tags" name="codeLI:tags" name="codefarmer:tags" name="PAXEast:tags" name="NZN:tags" name="MinecraftDojo:tags">
+
+<!--
+
+source= http://kidoyo.com/htmllesson.php
+
+This is a lesson for the beginner++ getting familiar with html/css/javascript code. In this lesson, you will be building a web page. The style of this page allows for you to create a comic strip. It is also useful for remixing, so that you can change the style and use the page for a purpose other than a comic strip. In this lesson, you are working on a code farm, and different scenes will involve different challenges, taking you through a learning journey exploring multiple web publishing ideas. This lesson will cover:
+
+        - Changing images
+        - Changing text
+        - Changing classes
+        - Copying nodes
+        - Embedding scripts
+        - Adding hyperlinks
+        - More++
+
+-->
+
+<!--
+
+    1) READ THROUGH COMMENTS. This is a comment. Everything inside of this html tag or '/*' tag for CSS, is not processed as code. Instead it works as text comments about the code you write. Good code is commented code. As you work on this project, comments will give you instructions, hints and guides for completing the project. You can also write your own comments about your project. Read ahead and try it out.
+
+    2) Learn about CODE. <html> is made up of tags that look like this <p> </p>. The tags tell you something about the information contained between them. Click on the tags in the code on this side of the editor to get a description of what each tag is for.
+  -->    
+    
+    <title>Blank Code Farm</title>
+
+  <!-- This is the CSS code. Style is defined here. -->
+    
+  <style>
+    body {
+      background-color:#FFFFFF;
+      font-family:"Verdana", sans-serif;
+      line-height:1;
+      text-align: center;
+      padding: 0px 0px 0px 0px;
+    }
+    h1 {
+      text-transform: uppercase;
+      text-shadow: 1px 2px 1px #000000;
+      font-size:80px;
+      color:#000000;
+    }
+    h2 {
+      font-size:30px;
+      text-shadow: 1px 2px 1px #000000;
+      color:#000000;
+    }
+    h3 {
+      font-size:13px;
+      color:#000000;
+    }
+    .site {
+      max-width:870px;
+      margin:30px auto 0;
+    }
+    .scene {
+      width: 275px;
+      height:275px;
+      border:1px solid black;
+      background: #fff;
+      margin:4px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+    }
+   .scenew {
+      width: 855px;
+      height:275px;
+      border:1px solid black;
+      background: #fff;
+      display: inline-block;
+      position: relative;
+    }
+   .sceneh {
+      width: 275px;
+      height:550px;
+      border:1px solid black;
+      background: #fff;
+      margin:4px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+    }
+   .scenes {
+      width: 275px;
+      height:275px;
+      border:1px solid black;
+      background: #fff;
+      margin:4px;
+      display: inline-block;
+      position: relative;
+      vertical-align: top;
+      padding: 0px 0px 0px 0px;
+    }
+    .scene img {
+      width:100%;
+      height:100%;
+      display: block;
+    }
+    .scenew img {
+      width:100%;
+      height:100%;
+      display: block;
+    }
+    .sceneh img {
+      width:100%;
+      height:100%;
+      display: block;
+    }
+    .scenes img {
+      width:50%;
+      height:50%;
+      display: block;
+      padding: 50px 70px 70px 70px;
+    }
+    .caption {
+      padding:4px;
+      margin:0;
+      position: absolute;
+      left:0;
+      right:0;
+      background:#E11414;
+      text-align:center;
+      top:0;
+    }
+    .caption.bottom {
+      bottom:0;
+      top:auto;
+      border-top:2px solid black;
+    }
+    .caption.top {
+      top:0;
+       border-bottom:2px solid black;
+    }
+    .speech {
+      width:29%;
+      border-radius:50%;
+      border:2px solid black;
+      margin:0;
+      position: absolute;
+      z-index:1;
+      background: Snow ;
+      padding:20px;
+      top:-15px;
+      text-align: center;
+    }
+    /* Advanced CSS - controls speech pointer style */
+    
+    .speech:after {
+      border-color: snow transparent;
+      border-style: solid;
+      border-width: 13px 13px 0;
+      bottom: -11px;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left:-14px;
+      position: absolute;
+      width: 0;
+    }
+    .speech:before {
+      border-color: black transparent;
+      border-style: solid;
+      border-width: 16px 16px 0;
+      bottom: -15px;
+      content: "";
+      display: block;
+      left: 50%;
+      margin-left:-17px;
+      position: absolute;
+      width: 0;
+    }
+    .speech.left {
+      left:-15px;
+    }
+    .speech.right {
+      right:-15px;
+    }
+    .speach.bottom {
+      bottom:0;
+      left:-15px;
+    }
+    footer {
+      clear:both;
+    }
+  </style>
+
+<!-- Google Analytics - Do you know what that is for? Hint: the code goes between the <script></script> tags below. Open a new tab in your browser and do some research. -->
+    
+<script>
+</script>
+
+</head>
+  
+<!-- We are now starting the body of our web page --> 
+  
+<body>
+
+<!-- Task 1: styles are defined in our CSS code. Can you change the styles of the text in the <h1></h2> tags to give the comic page a better name or heading? -->
+  
+  <h1>Blank</h1>
+
+  <h2>Blankity Blank</h2>
+  
+  <center><a href="" target="_blank" title=""> <img src="" width="90px" alt="empty" /></a></center>
+  
+<!-- 
+    This is where the comic strip style starts. 
+    The 'site' <div> wraps around each comic 'scene' to contain them all.
+-->
+  
+  <div class="site">
+
+<!--
+Task 2: the below <html> is one scene of our comic strip. Start by changing the images in the scene to one of your own photos. Do you know how to get the image url of one of your favorite photos? Where are dimensions of our images defined? What is the difference between 'scenew' and 'sceneh' and 'scene'?  
+-->    
+    
+      <div class="scenew">
+        <p class="caption bottom"><a href="" target="_blank">Blank</a></p>
+        <p class="speech left">Blankity Blank</p>
+        <p class="speech right">Blank</p>
+        <img src="" alt="" />
+      </div>
+    
+<!-- 
+Now lets work with the captions and speech bubbles in our scenes. Task 3: Look at the 1st scene above.  It has both a caption and a speech bubble. How would you change the caption below or add a new speech bubble?
+-->    
+
+      <div class="sceneh">
+        <p class="caption bottom">Blank</p>
+        <a href="" target="_blank"> <img src="" alt="" /></a>
+      </div>
+    
+      <div class="scene">
+        <a href="" target="_blank"> <img src="" alt="" /></a>
+
+<!-- what if you want to add a hyperlink to your page... how do you do that? What is a hyperlink? Do you know what 'http' stands for? Task 4: add a link to one of your scenes to send readers to a new page for more information. -->
+        
+        <a href="" target="_blank" title=""> <img src="" width="90px" alt="" /></a>
+      </div>
+
+<!-- Have you ever created a computer game? Are you familiar with Scratch (scratch.mit.edu)? If you have a favorite game, lets embed it here in our page. Task 5: Go to the Scratch website and find a favorite game that you want to 'Embed'... grab the embed code and place it below. Hint: <iframe></iframe> tags are useful...-->
+    
+      <div class="scene">
+        <a href="" target="_blank"><img src="" width="90px" alt="" /></a>
+      </div>
+
+      <div class="scene">
+        <p class="caption bottom"></p>
+        <img src="" alt="" />
+      </div>
+
+    <!-- What if you wanted to add a video to your site...how would you do that? Task 6: Lets add a Minecraft Video to our page -->
+    
+      <div class="scene">
+        
+      </div>
+
+      <div class="scene">
+        <a href="" target="_blank" alt="" title=""><img src="" width="275px" alt="" /></a>
+      </div>
+
+<!-- How would you turn your new site into an ecommerce opportunity? Do you have entrepreneurial ambitions? Want to sell something? Raise Money for charity? Make a product? Check out one approach below... how would you do it?-->
+    
+      <div class="scenes">
+        <p class="caption bottom"></p>
+        <img src="" alt="" />
+      </div>
+
+      <div class="scene">
+        <p class="caption bottom"></p>
+        <img src="" alt="" />
+      </div>
+  
+      <div class="scene">
+      <a href="" target="_blank" title=""> <img src="" alt="" /></a>
+      </div>
+  
+  </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+
+  <!-- 
+Extra Credit - The following snippet of code is accessible via https://togetherjs.com/ and allows you to use client-side code called javascript to create a collaborative experience on your new page. Task 7: What is javascript? Do some research... 
+
+How would you use this javascript code in a cool way with your friends? Perhaps a new kind of comic writing challenge is to collaborate in real time with your friends or parents? Or how about embedding your favorite game in a page and inviting your friends to play and chat at the same time? Give it a try! 
+  -->
+
+<script src="https://togetherjs.com/togetherjs-min.js"></script>
+
+<button onclick="TogetherJS(this); return false;"> <u>Blank</u></button>
+<center><h3>Blank</h3></center>
+
+<br /><br /><br /><br /><br />
+
+<!-- what if you wanted to add a Twitter stream to your page... do you use Twitter? Do you know how to develop code using Twitter?  -->
+  
+      <div class="sceneh">
+        <p class="caption bottom">Blank</p>
+        <a class="twitter-timeline" height="510px" width="285px" href="https://twitter.com/kid_OYO"  data-widget-id="424633584293400576"></a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+
+<!-- What happens when a link is no longer active...it no longer takes you to a working page or url that has active information assigned to it?  How do you fix a dead link? -->
+  
+      <div class="scene">
+        <a href="" target="_blank" alt="" title=""><img src="" alt="" /></a><br />
+        
+      </div>
+
+      <div class="scene">
+        <p class="caption top">Blank</p>
+        <a href="" target="_blank" alt="" title="" height="150px"><img src="" alt="kidOYO" /></a><br />
+        
+      </div>
+  
+  <br /><br /><br /><br /><br /><br /><br />
+
+  <!-- Disclaimer for images -->
+  <footer>
+   &copy; 2014 [Your Name Here], All Rights Reserved. All images are the property of their respective owners.
+  </footer>
+
+</body>
+</html>
